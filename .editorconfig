@@ -1,0 +1,28 @@
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+# indentation: four spaces (https://developer.android.com/kotlin/style-guide#indentation)
+indent_size = 4
+indent_style = space
+insert_final_newline = true
+# line wrapping: 100 chars limit (https://developer.android.com/kotlin/style-guide#line_wrapping)
+max_line_length = 100
+
+[*.{kt,kts}]
+# star imports: not allowed (https://developer.android.com/kotlin/style-guide#import_statements)
+ij_kotlin_name_count_to_use_star_import = 2147483647
+ij_kotlin_name_count_to_use_star_import_for_members = 2147483647
+# imports layout: alphabetical (with capital letters before lower case letters, no blank lines)
+ij_kotlin_imports_layout = *
+# https://youtrack.jetbrains.com/issue/KTIJ-21944/Code-style-does-not-honour-setting-for-Minimum-blank-lines-around-when-branches-with
+ij_kotlin_line_break_after_multiline_when_entry = false
+ktlint_function_naming_ignore_when_annotated_with = Composable
+
+[*.{json,json5,yml,yaml}]
+indent_size = 2
+
+[strings_generated.xml]
+# indentation defined by Lokalise which we can not configure
+indent_size = 2
